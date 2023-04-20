@@ -8,15 +8,17 @@ import SectionComponents from "./components/SectionComponents";
 
 function App() {
   return (
-    <><div className="">
-      <Navbar />
-      <Hero />
-    </div>
-    <main>
-        <SectionFeature />
-        <SectionInsideTemplate />
-        <SectionComponents />
-      </main></>
+    <>
+      <div className="">
+        <Navbar />
+        <Hero />
+      </div>
+      <main>
+          <SectionFeature />
+          <SectionInsideTemplate />
+          <SectionComponents />
+      </main>
+    </>
   );
 }
 
