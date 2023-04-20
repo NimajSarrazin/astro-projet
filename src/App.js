@@ -2,7 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/navigation/Navbar";
 import Hero from "./components/hero";
-import SectonFeature from "./components/SectonFeature";
+import SectionFeature from "./components/SectionFeature";
+import SectionInsideTemplate from "./components/SectionInsideTemplate";
+import SectionComponents from "./components/SectionComponents";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Hero />
     </div>
     <main>
-        <SectonFeature title='What you get with AstroWind'/>
+        <SectionFeature />
+        <SectionInsideTemplate />
+        <SectionComponents />
       </main></>
   );
 }
