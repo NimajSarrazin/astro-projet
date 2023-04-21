@@ -78,19 +78,19 @@ export default function CardSectionInsideTemplate({ img, img2, img3 }) {
           </h2>
           <CardSectionFeature
             iconName="BsBoxSeam"
-            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-blue-900"
+            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-[#3141AA]"
             title="Step 1: Download"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis reiciendis dolore. Nihil repellat sint totam placeat vero repellendus id impedit, suscipit, et tempore hic."
           />
           <CardSectionFeature
             iconName="IoTextOutline"
-            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-blue-900 rounded-full"
+            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-[#3141AA] rounded-full"
             title="Step 2: Add content"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis reiciendis dolore."
           />
           <CardSectionFeature
             iconName="GiPaintRoller"
-            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-blue-900 rounded-full"
+            bgColorIcon="border border-2 border-blue-900 rounded-full p-2 text-4xl text-[#3141AA] rounded-full"
             title="Step 3: Customize styles"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis reiciendis dolore. Nihil repellat sint totam placeat vero repellendus id impedit, suscipit, et tempore hic.Lorem ipsum dolor sit amet consectetur adipisicing elit."
           />
@@ -104,7 +104,6 @@ export default function CardSectionInsideTemplate({ img, img2, img3 }) {
           <img src={img3} alt="" />
         </div>
       </div>
-      
     </>
   );
 }
