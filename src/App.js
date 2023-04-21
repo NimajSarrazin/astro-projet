@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import SectionFeature from "./components/SectionFeature";
 import SectionInsideTemplate from "./components/SectionInsideTemplate";
 import SectionComponents from "./components/SectionComponents";
+import SectionFaqs from "./components/SectionFaqs";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <SectionFeature />
           <SectionInsideTemplate />
           <SectionComponents />
+          <SectionFaqs />
       </main>
     </>
   );

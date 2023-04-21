@@ -2,6 +2,8 @@ import React from "react";
 import { BsInfoSquare } from "react-icons/bs";
 
 import TitleSection from "./TitleSection";
+// import CardSectionFeature from "./CardSectionFeature";
+import { dataCards } from "../data/DataCardFeature";
 import CardSectionFeature from "./CardSectionFeature";
 export default function SectionFeature() {
   return (
@@ -20,46 +22,16 @@ export default function SectionFeature() {
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, tenetur? Impedit tempora repellendus quisquam incidunt sunt aliquid."
         />
       </div>
-      <div className="flex justify-center space-x-5 p-5">
-        <aside>
-          <CardSectionFeature
-            iconName="TbBrandTailwind"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Astro + Tailwind CSS Integration"
-            description="A seamless integration between two great frame works that offer high productivity, performance and versatility."
-          />
-          <CardSectionFeature
-            iconName="BsXDiamondFill"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Ready-to-use Components"
-            description="Widget made with Tailwind CSS Ready to be used in Marketing Websites, Saas, Blogs, Personal Profiles, Small Business..."
-          />
-          <CardSectionFeature
-            iconName="VscChecklist"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Best Practices"
-            description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, tenetur! Ullam facere ipsam culpa, dolore architecto saepe."
-          />
-        </aside>
-        <aside>
-          <CardSectionFeature
-            iconName="IoIosRocket"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Excellent Page Speed"
-            description="Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates."
-          />
-          <CardSectionFeature
-            iconName="BsArrowLeftRight"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Search Engine Optimization (SEO)"
-            description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, tenetur! Ullam facere ipsam culpa, dolore architecto saepe."
-          />
-          <CardSectionFeature
-            iconName="HiOutlineLightBulb"
-            bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
-            title="Open to new ideas and contributions"
-            description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, tenetur! Ullam facere ipsam culpa, dolore architecto saepe"
-          />
+      <div className="flex justify-center p-5">
+        <aside className="grid grid-cols-2">
+          {dataCards.map((item) => (
+            <CardSectionFeature
+              icon={item.icon}
+              bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </aside>
       </div>
     </>
