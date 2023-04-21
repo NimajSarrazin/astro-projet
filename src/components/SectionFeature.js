@@ -15,7 +15,7 @@ export default function SectionFeature() {
           Practices and High Perfomance
         </p>
       </div>
-      <div className="py-10 px-20">
+      <div className="py-20 px-20">
         <TitleSection
           title="Features"
           subtitle="What you get with AstroWind"
@@ -23,11 +23,11 @@ export default function SectionFeature() {
         />
       </div>
       <div className="flex justify-center p-5">
-        <aside className="grid grid-cols-2">
-          {dataCards.map((item) => (
+        <aside className="grid grid-cols-2 gap-y-8">
+          {dataCards.map((item,index) => (
             <CardSectionFeature
+              key={index}
               icon={item.icon}
-              bgColorIcon="bg-[#3141AA] rounded-full p-2 text-4xl"
               title={item.title}
               description={item.description}
             />

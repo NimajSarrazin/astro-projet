@@ -6,6 +6,7 @@ import SectionFeature from "./components/SectionFeature";
 import SectionInsideTemplate from "./components/SectionInsideTemplate";
 import SectionComponents from "./components/SectionComponents";
 import SectionFaqs from "./components/SectionFaqs";
+import SectionDream from "./components/cards/SectionDream";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <main>
           <SectionFeature />
           <SectionInsideTemplate />
+          <SectionDream />
           <SectionComponents />
           <SectionFaqs />
       </main>

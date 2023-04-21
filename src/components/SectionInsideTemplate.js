@@ -5,7 +5,7 @@ import CardSectionInsideTemplate from "./CardSectionInsideTemplate";
 export default function SectionInsideTemplate() {
   return (
     <>
-      <div className="py-10 px-20 bg-blue-100">
+      <div className="py-20 px-20 bg-blue-100">
         <TitleSection
           title="inside template"
           subtitle="And what's inside? ..."
